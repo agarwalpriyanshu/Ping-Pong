@@ -1,2 +1,20 @@
-# Auto detect text files and perform LF normalization
+# Normalize line endings for text files
 * text=auto
+
+# Ensure LF line endings for Unity and code files
+*.cs text eol=lf
+*.unity text eol=lf
+*.prefab text eol=lf
+*.shader text eol=lf
+
+# Binary files - no line-ending conversion
+*.png binary
+*.jpg binary
+*.fbx binary
+*.mp4 binary
+*.dll binary
+
+# Windows scripts use CRLF
+*.bat text eol=crlf
+
+
